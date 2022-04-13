@@ -46,4 +46,57 @@ h2 {
     font-size: 3.5rem;
   }
 }
+/*button*/
+.btn {
+  outline: 0;
+  border: 0;
+  padding: 1.5rem 2.8rem;
+  border-radius: 0.8rem;
+  margin: 1rem;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.btn--secondary {
+  background-color: var(--color-secondery-dark);
+  color: var(--color-white);
+}
+.btn--block {
+  width: 100%;
+  font: 1.6rem;
+}
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+  .btn--block {
+    font-size: 2rem;
+  }
+}
+/*Badge*/
+.badge {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  background-color: #fff;
+  border-radius: 32px;
+  border: 2px solid var(--color-primary);
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  direction: ltr;
+  color: var(--color-secondery-dark);
+}
+.badge--primary {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.4rem;
+  }
+}
 
