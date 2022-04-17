@@ -9,7 +9,7 @@
 /*variable in root*/
 :root {
   --color-primary: #ff5722;
-  --color-primary-light:#FF7A50;
+  --color-primary-light: #ff7a50;
   --color-navbar: #f8f8f8;
   --color-secondery-light: #fff6f2;
   --color-secondery-dark: #ffa589;
@@ -28,8 +28,7 @@ body {
 }
 h1,
 h2,
-h3 
-{
+h3 {
   color: var(--color-heading);
   font-weight: 700;
 }
@@ -128,7 +127,6 @@ h2 {
 @media screen and (min-width: 1024px) {
   .list--tick .list__item {
     font-size: 1.8rem;
-   
   }
 }
 /*Plan section*/
@@ -136,7 +134,7 @@ h2 {
   display: grid;
   gap: 8rem 6rem;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit,minmax(250px,316px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 316px));
   margin-top: 5rem;
 }
 .plan {
@@ -153,98 +151,138 @@ h2 {
 .card__body {
   padding: 3rem 2.5rem;
 }
-.card__secondary .card__header{
-    background-color: var(--color-primary-light);
+.card__secondary .card__header {
+  background-color: var(--color-primary-light);
 }
-.card__primary .card__header{
-    background-color: var(--color-secondery-dark);
+.card__primary .card__header {
+  background-color: var(--color-secondery-dark);
 }
 .card__header {
   background-color: var(--color-secondery-dark);
-     color: var(--color-white);
+  color: var(--color-white);
 }
-.card__body{
-    background-color: var(--color-secondery-light);
+.card__body {
+  background-color: var(--color-secondery-light);
 }
-.plan__introduction{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-   
+.plan__introduction {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
-.plan__price{
-    font-size: 3rem;
+.plan__price {
+  font-size: 3rem;
 }
-.plan__billing_cycle{
-    font-size: 1.4rem;
+.plan__billing_cycle {
+  font-size: 1.4rem;
 }
-.plan__description{
-    display: block;
-    margin-top: 1.5rem;
+.plan__description {
+  display: block;
+  margin-top: 1.5rem;
 }
-.plan .btn--block{
+.plan .btn--block {
   margin-top: 10rem;
 }
-.plan:hover{
+.plan:hover {
   transform: scale(1.025);
 }
-.plan--poupular{
+.plan--poupular {
   transform: scale(1.1);
 }
-.plan--poupular:hover{
+.plan--poupular:hover {
   transform: scale(1.12);
 }
 @media screen and (min-width: 1024px) {
   .block-plan {
     grid-template-columns: repeat(3, 1fr);
   }
- /*container*/
- .container{
-   max-width: 1150px;
-   margin: 0 auto;
- }
-  
+  /*container*/
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 }
 /*Feature*/
-.feature{
+.feature {
   display: grid;
   justify-content: center;
   padding: 2rem;
   gap: 0rem 10rem;
 }
-.feature__text{
+.feature__text {
   margin-bottom: 3rem;
 }
-.feature__image > img{
-margin-right: 6rem;
- margin-bottom:2rem ;
+.feature__image > img {
+  margin-right: 6rem;
+  margin-bottom: 2rem;
 }
 
-.feature .btn{
-   padding: 1.2rem 3rem;
- 
+.feature .btn {
+  padding: 1.2rem 3rem;
 }
 @media screen and (min-width: 1024px) {
-  .feature{
-    grid-template-columns: repeat(2,1fr);
+  .feature {
+    grid-template-columns: repeat(2, 1fr);
   }
- .container{
-   max-width: 1150px;
-   margin: 0 auto;
- }
-  .feature__image > img{
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  .feature__image > img {
     width: 100%;
     height: auto;
-    
   }
-  .align .feature__image{
+  .align .feature__image {
     order: 1;
   }
-  .feature__detail{
+  .feature__detail {
     order: 1;
   }
-  .feature__image{
+  .feature__image {
     order: 2;
   }
- 
+}
+/*Contact-us*/
+.contact-us {
+  display: grid;
+}
+.contact-us__map {
+    display: none;
+  }
+@media screen and (min-width: 1024px) {
+  .contact-us {
+  
+      grid-template-areas:
+      "address form"
+      "map form"
+      "icons form";
+    grid-template-columns: 70fr 30fr;
+  }
+.contact-us__form {
+    grid-area: form;
+  }
+  .contact-us__address {
+    grid-area: address;
+  }
+  .contact-us__map {
+    grid-area: map;
+    display:block ;
+  }
+  .contact-us__icons {
+    grid-area: icons;
+  }
+}
+/*Icons*/
+.icon{
+  width: 40px;
+  height: 40px;
+}
+.icon-container{
+  height: 64px;
+  width: 64px;
+  background-color: rgb(216, 216, 216);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
 }
