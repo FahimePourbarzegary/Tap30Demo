@@ -381,3 +381,123 @@ textarea {
 .form-wrapper textarea:focus {
   border-color: var(--color-primary);
 }
+/*Footer*/
+.main-footer {
+  background-color: rgb(15, 15, 15);
+  color: #f5f5f5;
+  min-height: 400px;
+  display: flex;
+  padding-top: 1rem;
+}
+
+.main-footer .footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer__item {
+  margin-bottom: 2.5rem;
+}
+.footer__item a {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.footer__item a:hover {
+  color: var(--color-primary);
+}
+.footer__detail {
+  display: flex;
+  flex-direction: column;
+}
+.footer__detail h3 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 1.5rem 0rem;
+}
+.copy-right-mobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: #acacac;
+  line-height: 30px;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.copy-right {
+  color: #acacac;
+  line-height: 30px;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.footer__detail img {
+  width: 13rem;
+}
+.footer__item h6 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.footer__item.enemad {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+.footer__enemad img {
+  width: 100%;
+  height: auto;
+}
+.footer__enemad {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  max-width: 130px;
+  max-height: 140px;
+  margin-right: 20px;
+}
+.social-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .main-footer .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+  }
+  .footer__logo {
+    width: 15rem;
+  }
+  .footer__item {
+    margin-bottom: 0;
+    margin-left: 3rem;
+  }
+  .footer__item a {
+    font-size: small;
+  }
+  .footer__item h6 {
+    margin-bottom: 2.5rem;
+  }
+  .footer__enemad img {
+    width: 10rem;
+  }
+  .copy-right-mobile {
+    display: none;
+  }
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .copy-right {
+    display: none;
+  }
+}
