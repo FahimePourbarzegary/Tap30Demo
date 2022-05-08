@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>accordion</title>
+  </head>
+  <body>
+    <section class="container block">
+      <div class="accordion-wrapper">
+        <div class="accordion__intro">
+          <h2 class="accordion__heading">ویرایش سوابق</h2>
+          <span>
+            <span> ویرایش </span
+            ><span>
+              <i class="fa-solid fa-pen-to-square"></i>
+            </span>
+          </span>
+        </div>
+        <div class="accordion">
+          <header class="accordion__header">
+            <h2 class="accordion__heading">سابقه تحصیلی</h2>
+            <span class="icon icon-container"
+              ><i class="fa-solid fa-circle-chevron-left"></i
+            ></span>
+          </header>
+          <div class="accordion__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            fuga dolor mollitia corrupti numquam consequatur, consectetur
+            laboriosam, reiciendis fugiat officia expedita cum odio aliquid ut
+            quasi, delectus a voluptatum. Optio.
+          </div>
+        </div>
+        <div class="accordion">
+          <header class="accordion__header">
+            <h2 class="accordion__heading">سابقه تحصیلی</h2>
+            <span class="icon icon-container"
+              ><i class="fa-solid fa-circle-chevron-left"></i
+            ></span>
+          </header>
+          <div class="accordion__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            fuga dolor mollitia corrupti numquam consequatur, consectetur
+            laboriosam, reiciendis fugiat officia expedita cum odio aliquid ut
+            quasi, delectus a voluptatum. Optio.
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const accordionHeaders = document.querySelectorAll(".accordion__header");
+      const accordion = document.querySelector(".accordion");
+      accordionHeaders.forEach((item) => {
+        item.addEventListener("click", (e) => {
+          console.log(e.target.parentElement);
+          e.target.parentElement.classList.toggle("accordion__expanded");
+        });
+      });
+    </script>
+  </body>
+</html>
