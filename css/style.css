@@ -352,7 +352,6 @@ h2 {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 10px 30px #ccc;
-
 }
 .form-wrapper h3 {
   margin: 3rem 0;
@@ -474,10 +473,10 @@ textarea {
   justify-content: space-between;
   max-width: 100%;
 }
-.social-links h6{
+.social-links h6 {
   display: none;
 }
-.icon-social{
+.icon-social {
   padding: 10%;
 }
 @media screen and (min-width: 768px) {
@@ -509,9 +508,9 @@ textarea {
   .social-links {
     flex-wrap: wrap;
   }
-  .social-links h6{
-  display:block ;
-}
+  .social-links h6 {
+    display: block;
+  }
 }
 @media only screen and (max-width: 768px) {
   .copy-right {
@@ -561,7 +560,7 @@ textarea {
   color: rgb(129, 129, 129);
 }
 .nav__item .btn {
-  color:var(--color-white);
+  color: var(--color-white);
   padding: 1rem 3.5rem;
 }
 
@@ -613,7 +612,7 @@ textarea {
   position: relative;
   width: 100%;
 }
-.hero-section img {
+.hero-section .banner-img {
   width: 100%;
   height: auto;
 }
@@ -673,9 +672,7 @@ textarea {
 .icon.car {
   margin-left: 5rem;
 }
-.banner-phone {
-  display: none;
-}
+
 @media screen and (min-width: 768px) {
   .hero-wrapper {
     justify-content: flex-start;
@@ -700,14 +697,18 @@ textarea {
     font-size: 1.6rem;
   }
   .banner-phone {
+    bottom: -40%;
+    height: 100%;
+    left: 10%;
     position: absolute;
-    display: none;
-    bottom: -80%;
-    height: auto;
-    width: 420px;
   }
   .hero-section {
     height: 478px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-phone {
+    display: none;
   }
 }
 /*Services*/
@@ -801,7 +802,7 @@ textarea {
   margin-top: 6rem;
 }
 /*Travel*/
- .travel__slides {
+.travel__slides {
   display: flex;
   justify-content: space-between;
   align-items: center;
