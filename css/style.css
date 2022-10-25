@@ -550,6 +550,11 @@ textarea {
 .nav__item > a:hover {
   color: var(--color-primary);
 }
+.nav__item.cta > a:hover {
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-white);
+  color: var(--color-heading);
+}
 .nav__item.calltoaction > a {
   color: #f5f5f5;
   font-size: 1.4rem;
@@ -655,6 +660,10 @@ textarea {
   width: 220px;
   display: flex;
   justify-content: center;
+}
+.intro-btn__passenger:hover {
+  cursor: pointer;
+  transform: scale(1.01);
 }
 .intro-btn__passenger p {
   font-size: 1.4rem;
